@@ -2,15 +2,15 @@ const mongoose = require('mongoose');
 
 const gameSchema = new mongoose.Schema({
     title: {type: String, required: true},
-    description: String,
-    year: Number,
+    description: {type: String, required: true},
+    year: {type: Number, required: true},
 }, {collection: 'games'});
 
 const orderSchema = new mongoose.Schema({
-    first_name: String,
-    last_name: String,
-    description: String,
-    item: String,
+    first_name: {type: String, required: true},
+    last_name: {type: String, required: true},
+    description: {type: String, required: true},
+    item: {type: String, required: true},
 }, {collection: 'orders'});
 
 
