@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const router = express.Router();
 const morgan = require('morgan');
-
 const dbInfo = require('./databaseInformation');
+
 
 // Server Setup
 const port = process.env.PORT || 3000;
@@ -18,7 +18,11 @@ app.use(morgan('dev'));
 mongoose.connect(`mongodb://${"ericzorndesigns"}:${"Baseball30!"}@ds219672.mlab.com:19672/daniel-kitchen-gaming`);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-const Game = mongoose.model('Game', dbInfo.gameSchema);
+
+// Models
+const GameModel = dbInfo.models.gameModel;
+const OrderModel = dbInfo.models.orderModel;
+
 db.once('open', () => {
     console.log("we're connected!");
 });
