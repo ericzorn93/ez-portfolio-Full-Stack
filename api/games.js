@@ -13,6 +13,7 @@ router.get('/', function (req, res) {
         {id: 1, gameName: "Desert Bus"},
         {id: 2, gameName: "3 Point Hoops"},
         {id: 3, gameName: "Arcade QB Pass Attack"},
+        {id: 4, gameName: "World Cup Ping Pong"},
     ]);
 });
 // define the about route
