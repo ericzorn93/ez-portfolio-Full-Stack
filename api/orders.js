@@ -10,12 +10,16 @@ router.use(function timeLog(req, res, next) {
 
 // define the home page route
 router.get('/', function (req, res) {
-    res.send('Orders home page')
+    res.json({
+        ordersHome: 'Orders home page'
+    });
 });
 
 // define the about route
 router.get('/about', function (req, res) {
-    res.send('Orders games')
+    res.json({
+        ordersAbout: 'Orders about page'
+    });
 });
 
 

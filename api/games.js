@@ -9,11 +9,15 @@ router.use(function timeLog(req, res, next) {
 
 // define the home page route
 router.get('/', function (req, res) {
-    res.send('Games home page')
+    res.json({
+        gamesHome: 'Games home page'
+    });
 });
 // define the about route
 router.get('/about', function (req, res) {
-    res.send('About games')
+    res.json({
+        gamesAbout: 'Games about page'
+    });
 });
 
 module.exports = router;
