@@ -12,6 +12,7 @@ const app = express();
 
 // Middleware
 app.use(morgan('dev'));
+app.use(bodyParser.urlencoded({extended: true}));
 
 
 /************* DATABASE SETUP ****************/
