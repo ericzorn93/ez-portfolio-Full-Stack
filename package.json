@@ -5,13 +5,15 @@
   "author": "Eric Zorn",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "dev": "concurrently \"PORT=3001 yarn start\" \"cd ./client/ && yarn start\""
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "concurrently": "^3.6.1",
     "morgan": "^1.9.0"
   }
 }

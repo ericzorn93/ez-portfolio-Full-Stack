@@ -9,9 +9,11 @@ router.use(function timeLog(req, res, next) {
 
 // define the home page route
 router.get('/', function (req, res) {
-    res.json({
-        gamesHome: 'Games home page'
-    });
+    res.json([
+        {id: 1, gameName: "Desert Bus"},
+        {id: 2, gameName: "3 Point Hoops"},
+        {id: 3, gameName: "Arcade QB Pass Attack"},
+    ]);
 });
 // define the about route
 router.get('/about', function (req, res) {
