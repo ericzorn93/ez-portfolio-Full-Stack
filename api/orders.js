@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const dbInfo = require('../databaseInformation');
+const app = express();
 
+app.use(express.json());       // to support JSON-encoded bodies
+app.use(express.urlencoded()); // to support URL-encoded bodies
 
 // middleware that is specific to this router
 router.use(function timeLog(req, res, next) {
@@ -9,6 +12,8 @@ router.use(function timeLog(req, res, next) {
     next()
 });
 
+
+/*********** GET ROUTES *************/
 // define the home page route
 router.get('/', function (req, res) {
     res.json({
@@ -19,20 +24,20 @@ router.get('/', function (req, res) {
 
 /******** POST ROUTES *********/
 router.post('/', (req, res) => {
-    const testOrder = {
-        first_name: "Eric",
-        last_name: "Zorn",
-        description: "I want that cartridge",
-        item: "Desert Bus"
+    // Data Based on Schema
+    const order = {
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        description: req.body.description,
+        item: req.body.item
     };
 
 
-    const data = new dbInfo.models.orderModel(testOrder);
+    const data = new dbInfo.models.orderModel(order);
 
     data.save().then(data => console.log(data)).catch(error => console.error(error));
 
-    res.end();
-    console.log(req.params);
+    res.json(req.body);
 });
 
 
