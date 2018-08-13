@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const router = express.Router();
 const morgan = require('morgan');
 
+const dbInfo = require('./databaseInformation');
+
 // Server Setup
 const port = process.env.PORT || 3000;
 const app = express();
@@ -16,6 +18,7 @@ app.use(morgan('dev'));
 mongoose.connect(`mongodb://${"ericzorndesigns"}:${"Baseball30!"}@ds219672.mlab.com:19672/daniel-kitchen-gaming`);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
+const Game = mongoose.model('Game', dbInfo.gameSchema);
 db.once('open', () => {
     console.log("we're connected!");
 });

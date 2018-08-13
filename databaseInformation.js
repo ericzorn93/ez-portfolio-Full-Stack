@@ -1,9 +1,18 @@
 const mongoose = require('mongoose');
 
-const exports = module.exports = {};
+module.exports = {
+    gameSchema: new mongoose.Schema({
+        id: Number,
+        title: String,
+        description: String,
+        year: Number,
+    }),
+    orderSchema: new mongoose.Schema({
+        id: Number,
+        first_name: String,
+        last_name: String,
+        description: String,
+        item: String,
+    })
+};
 
-exports.gameSchema = new mongoose.Schema({
-    title: String,
-    description: String,
-    year: Number,
-});
