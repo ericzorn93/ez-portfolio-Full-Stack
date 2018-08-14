@@ -38,13 +38,16 @@ router.post('/', (req, res) => {
 
     data.save().then(data => {
         console.log(data);
-        res.json(data);
+        res.end();
     }).catch(error => {
         console.error(error);
         res.json(error);
     });
 });
 
+
+/******** PUT ROUTES *********/
+// To fill
 
 
 module.exports = router;
