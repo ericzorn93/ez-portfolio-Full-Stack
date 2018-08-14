@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { OrdersComponent } from './orders/orders.component';
 import {OrderService} from "./order.service";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,9 @@ import {OrderService} from "./order.service";
   imports: [
     BrowserModule
   ],
-  providers: [OrderService],
+  providers: [
+    OrderService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
