@@ -29,15 +29,20 @@ router.post('/', (req, res) => {
         first_name: req.body.first_name,
         last_name: req.body.last_name,
         description: req.body.description,
-        item: req.body.item
+        item: req.body.item,
+        numberOfItems: req.body.numberOfItems
     };
 
 
     const data = new dbInfo.models.orderModel(order);
 
-    data.save().then(data => console.log(data)).catch(error => console.error(error));
-
-    res.json(req.body);
+    data.save().then(data => {
+        console.log(data);
+        res.json(data);
+    }).catch(error => {
+        console.error(error);
+        res.json(error);
+    });
 });
 
 
