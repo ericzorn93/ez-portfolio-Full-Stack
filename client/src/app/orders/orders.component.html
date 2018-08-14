@@ -2,4 +2,6 @@
   orders works!
 </p>
 
-<li *ngFor="let order of fakeOrders">{{ order }}</li>
+<li *ngFor="let noneOrder of fakeOrders">{{ noneOrder }}</li>
+
+<p *ngFor="let order of finalOrders[0]">Order: {{order.orderName}}</p>

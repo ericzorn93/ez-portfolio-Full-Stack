@@ -8,10 +8,10 @@ import {OrderService} from "../order.service";
 })
 export class OrdersComponent implements OnInit {
 
-  constructor(private OrderService: OrderService) { }
+  constructor(private orderService: OrderService) {}
 
   ngOnInit() {
   }
 
-  fakeOrders = ["Order1", "Order2", "Order3"];
+  finalOrders = this.orderService.getOrders();
 }

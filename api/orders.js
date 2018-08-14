@@ -16,9 +16,11 @@ router.use(function timeLog(req, res, next) {
 /*********** GET ROUTES *************/
 // define the home page route
 router.get('/', function (req, res) {
-    res.json({
-        ordersHome: 'Orders home page'
-    });
+    res.json([
+        {id: 1, orderName: "Desert Bus"},
+        {id: 2, orderName: "Madden NFL"},
+        {id: 3, orderName: "Grand Theft Auto V"}
+    ]);
 });
 
 
