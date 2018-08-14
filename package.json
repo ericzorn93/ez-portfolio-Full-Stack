@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server.js",
-    "dev": "concurrently \"PORT=3001 yarn start\" \"cd ./client/ && yarn start\""
+    "dev": "concurrently \"PORT=3001 yarn start\" \"cd ./client/ && ng serve\""
   },
   "dependencies": {
     "body-parser": "^1.18.3",
