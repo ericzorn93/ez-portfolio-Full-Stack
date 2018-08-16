@@ -3,16 +3,12 @@ import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      posts: []
-    };
+  state = {
+    posts: [],
   }
 
-  componentDidMount() {
-    fetch("/api/orders").then(data => this.setState({ posts: data[0] }));
+  componentWillMount = () => {
+    fetch("http://localhost:3001/api/orders").then(data => data.json()).then(response => this.setState({posts: this.state.posts.push(response)})); 
   }
 
   render() {
