@@ -6,20 +6,17 @@ class App extends Component {
   state = {
     posts: [],
   }
-
-  componentWillMount = () => {
-    fetch("http://localhost:3001/api/orders").then(data => data.json()).then(response => this.setState({posts: this.state.posts.push(response)})); 
-  }
-
+  
   render() {
     const { posts } = this.state;
+    console.log(posts);
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p>{posts}</p>
       </div>
     );
   }
