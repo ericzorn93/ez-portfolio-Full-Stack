@@ -6,6 +6,7 @@ export default class Items extends Component {
     return (
       <div>
         <h1>Items Works</h1>
+        <Alert><h1>Hello</h1></Alert>
       </div>
     )
   }
