@@ -32,7 +32,7 @@ export default class NavHead extends Component {
   render() {
     return (
         <div>
-            <Navbar color="dark" inverse={true} expand="md">
+            <Navbar color="dark" dark expand="md">
                 <NavbarBrand href="/">Daniel Kitchen Gaming</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
