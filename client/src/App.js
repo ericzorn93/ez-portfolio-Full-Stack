@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import NavHead from './components/Navbar';
-import Items from './components/Items';
+import Games from './components/Games';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -10,7 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         <NavHead/>
-        <Items/>
+        <br/>
+        <Games/>
         <Footer/>
       </div>
     );

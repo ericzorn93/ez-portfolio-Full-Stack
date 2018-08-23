@@ -4,9 +4,9 @@ import OrderModal from './OrderModal';
 import { Card, CardBody, CardTitle} from 'reactstrap';
 
 // Custom CSS
-import '../Items.css';
+import '../Games.css';
 
-export default class Items extends Component {
+export default class Games extends Component {
 
   state = {
     orders: [],
