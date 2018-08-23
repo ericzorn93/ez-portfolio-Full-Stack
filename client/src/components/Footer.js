@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Alert } from 'reactstrap';
 
 // Custom CSS
 import '../Footer.css';
