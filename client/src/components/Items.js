@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import { Card, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import OrderModal from './OrderModal';
+import { Card, CardBody, CardTitle} from 'reactstrap';
 
 // Custom CSS
 import '../Items.css';
@@ -36,17 +36,13 @@ export default class Items extends Component {
                     <Card>
                         <CardBody>
                             <CardTitle>{order.orderName}</CardTitle>
-                            <CardSubtitle>{order.orderInformation}</CardSubtitle>
                         </CardBody>
                         <img width="100%" src="https://source.unsplash.com/user/erondu/318x180" alt={order.name} />
                         <CardBody>
-                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                            <Button color={"primary"} onClick={this.toggleModal}>Select</Button>
+                            {/* Order Modal */}
+                            <OrderModal orderData={{orderID: order.id, orderName: order.orderName, orderInfo: order.orderInformation}} />
                         </CardBody>
                     </Card>
-
-                    {/* Order Modal */}
-                    <OrderModal orderData={this.state.orders} />
 
                 </div>
             );
