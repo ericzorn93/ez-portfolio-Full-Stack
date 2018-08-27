@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter, Link, Route } from 'react-router-dom';
 import "./App.css";
 import NavHead from './components/Navbar';
 import Games from './components/Games';
@@ -8,12 +9,14 @@ class App extends Component {
   
   render() {
     return (
-      <div className="App">
-        <NavHead/>
-        <br/>
-        <Games/>
-        <Footer/>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <NavHead/>
+          <br/>
+          <Route exact component={Games} path="/"></Route>
+          <Footer/>
+        </div>
+      </BrowserRouter>
     );
   }
 }
