@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter, Link, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import "./App.css";
 import NavHead from './components/Navbar';
-import Games from './components/Games';
-import Footer from './components/Footer';
+import Games from './components/main-components/Games';
 import About from './components/main-components/About';
+import Footer from './components/main-components/Footer';
 
 class App extends Component {
   
@@ -14,7 +14,7 @@ class App extends Component {
         <div className="App">
           <NavHead/>
           <br/>
-          <Route exact component={Games} path="/"></Route>
+          <Route exact component={Games} path="/games"></Route>
           <Route exact component={About} path="/about"></Route>
           <Footer/>
         </div>

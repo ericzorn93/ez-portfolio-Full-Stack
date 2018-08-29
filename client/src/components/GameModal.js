@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-export default class OrderModal extends Component {
-
-  constructor(props) {
-      super(props);
-      const { orderData } = this.props;
-  }
+export default class GameModal extends Component {
 
   state = {
       modal: false

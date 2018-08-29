@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import OrderModal from './OrderModal';
+import GameModal from '../GameModal';
 import { Card, CardBody, CardTitle} from 'reactstrap';
 
 // Custom CSS
-import '../Games.css';
+import '../../css/Games.css';
 
 export default class Games extends Component {
 
@@ -40,7 +40,7 @@ export default class Games extends Component {
                         <img width="100%" src="https://source.unsplash.com/user/erondu/318x180" alt={order.name} />
                         <CardBody>
                             {/* Order Modal */}
-                            <OrderModal orderData={{orderID: order.id, orderName: order.orderName, orderInfo: order.orderInformation}} />
+                            <GameModal orderData={{orderID: order.id, orderName: order.orderName, orderInfo: order.orderInformation}} />
                         </CardBody>
                     </Card>
 

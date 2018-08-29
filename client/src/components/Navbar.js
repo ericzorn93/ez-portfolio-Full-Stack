@@ -11,8 +11,6 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
-import { BrowserRouter, Link } from 'react-router-dom';
-import Footer from '../components/Footer';
 
 export default class NavHead extends Component {
 
@@ -33,7 +31,6 @@ export default class NavHead extends Component {
 
   render() {
     return (
-        <BrowserRouter>
             <div>
                 <Navbar color="dark" dark expand="md">
                     <NavbarBrand href="/">Daniel Kitchen Gaming</NavbarBrand>
@@ -66,7 +63,6 @@ export default class NavHead extends Component {
                     </Collapse>
                 </Navbar>
             </div>
-        </BrowserRouter>
     )
   }
 }
