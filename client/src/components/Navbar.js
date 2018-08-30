@@ -12,6 +12,8 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 
+import { Link } from 'react-router-dom';
+
 export default class NavHead extends Component {
 
     constructor(props) {
@@ -33,21 +35,24 @@ export default class NavHead extends Component {
     return (
             <div>
                 <Navbar color="dark" dark expand="md">
-                    <NavbarBrand href="/">Daniel Kitchen Gaming</NavbarBrand>
+                    <NavbarBrand><Link to="/" style={{color: "white"}}>Daniel Kitchen Gaming</Link></NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="#">About Me</NavLink>
+                                <NavLink><Link to="/about">About Me</Link></NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">Contact</NavLink>
+                                <NavLink><Link to="/contact">Contact</Link></NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
                                     Gaming Portfolio
                                 </DropdownToggle>
                                 <DropdownMenu right>
+                                    <DropdownItem>
+                                        <Link to="/games">All Games</Link>
+                                    </DropdownItem>
                                     <DropdownItem>
                                         Indy Games
                                     </DropdownItem>

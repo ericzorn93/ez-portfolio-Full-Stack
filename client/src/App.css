@@ -1,0 +1,13 @@
+:root {
+    --primary-text-color: yellowgreen;
+    --secondary-text-color: green;
+}
+
+a {
+    color: var(--primary-text-color);
+}
+
+a:hover {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
