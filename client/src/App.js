@@ -6,6 +6,7 @@ import Home from './components/main-components/Home';
 import Games from './components/main-components/Games';
 import About from './components/main-components/About';
 import Footer from './components/main-components/Footer';
+import Contact from "./components/main-components/Contact";
 
 class App extends Component {
   
@@ -16,6 +17,7 @@ class App extends Component {
           <NavHead/>
           <br/>
           <Route exact component={Home} path="/"/>
+          <Route exact component={Contact} path="/contact" />
           <Route exact component={Games} path="/games"/>
           <Route exact component={About} path="/about"/>
           {/*<Footer/>*/}

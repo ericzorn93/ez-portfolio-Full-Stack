@@ -8,7 +8,7 @@ export default class About extends Component {
         <h1 className={"text-center"}>Daniel James Kitchen</h1>
         <br/>
         <div className="text-center">
-            <img src={DanKitchenProfilePicture} alt="Daniel Kitchen Profile Picture"/>
+            <img src={DanKitchenProfilePicture} alt="Daniel Kitchen Profile"/>
         </div>
         <hr/>
         <h5><strong>Branded Entertainment</strong></h5>
