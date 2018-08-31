@@ -9,9 +9,6 @@ import Footer from './components/main-components/Footer';
 import Contact from "./components/main-components/Contact";
 import SocialMedia from "./components/main-components/SocialMedia";
 
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faDiceTwo } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
   
