@@ -43,6 +43,9 @@ export default class NavHead extends Component {
                                 <NavLink><Link to="/about">About Me</Link></NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink><Link to="/social-media">Social Media</Link></NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink><Link to="/contact">Contact</Link></NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>

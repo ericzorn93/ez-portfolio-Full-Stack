@@ -7,6 +7,11 @@ import Games from './components/main-components/Games';
 import About from './components/main-components/About';
 import Footer from './components/main-components/Footer';
 import Contact from "./components/main-components/Contact";
+import SocialMedia from "./components/main-components/SocialMedia";
+
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faDiceTwo } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
   
@@ -20,7 +25,8 @@ class App extends Component {
           <Route exact component={Contact} path="/contact" />
           <Route exact component={Games} path="/games"/>
           <Route exact component={About} path="/about"/>
-          {/*<Footer/>*/}
+          <Route exact component={SocialMedia} path="/social-media"/>
+          <Footer/>
         </div>
       </BrowserRouter>
     );

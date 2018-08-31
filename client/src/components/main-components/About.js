@@ -2,9 +2,21 @@ import React, { Component } from 'react';
 import DanKitchenProfilePicture from '../../assets/img/Dan_Kitchen.jpg';
 
 export default class About extends Component {
+
+
+  state = {
+    colors: ['primary', 'success', 'danger', 'warning', 'info', 'muted'],
+    textColor: ""
+  };
+
+  changeTextColor =  e => {
+      const colorIndex = Math.floor(Math.random() * this.state.colors.length);
+      this.setState({ textColor: this.state.colors[colorIndex]});
+  };
+
   render() {
     return (
-      <div className={"container"}>
+      <div className={`container text-${this.state.textColor}`} onClick={this.changeTextColor}>
         <h1 className={"text-center"}>Daniel James Kitchen</h1>
         <br/>
         <div className="text-center">
