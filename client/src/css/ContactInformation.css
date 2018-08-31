@@ -1,0 +1,9 @@
+.contact-info {
+    background: var(--primary-dark);
+    color: var(--primary-text-color);
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

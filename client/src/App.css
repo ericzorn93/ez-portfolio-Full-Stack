@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: yellowgreen;
     --secondary-text-color: green;
+    --primary-dark: #353A3F;
 }
 
 body {

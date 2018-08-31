@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import GameModal from '../sub-components/GameModal';
-import { Card, CardBody, CardTitle} from 'reactstrap';
+import { Card, CardBody, CardTitle, CardDeck, CardSubtitle, Button, CardImg, CardText } from 'reactstrap';
 
 // Custom CSS
 import '../../css/Games.css';
@@ -33,6 +33,7 @@ export default class Games extends Component {
           {orders.map(order => {
             return (
                 <div className={`card-wrap${order.id}`} key={order.id}>
+
                     <Card>
                         <CardBody>
                             <CardTitle>{order.orderName}</CardTitle>
@@ -43,7 +44,6 @@ export default class Games extends Component {
                             <GameModal orderData={{orderID: order.id, orderName: order.orderName, orderInfo: order.orderInformation}} />
                         </CardBody>
                     </Card>
-
                 </div>
             );
           })}

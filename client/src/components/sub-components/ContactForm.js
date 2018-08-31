@@ -48,11 +48,24 @@ export default class ContactForm extends Component {
     });
   };
 
+  handleFormReset = e => {
+      e.preventDefault();
+      this.setState({
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          message: "",
+          formProgress: 0
+      });
+  };
+
   render() {
     return (
       <div className={"container"}>
-          <div className="text-center">{this.state.formProgress}%</div>
-          <Progress value={this.state.formProgress}/>
+          <br/>
+          <div className="text-center">Form Progress: {this.state.formProgress}%</div>
+          <Progress value={this.state.formProgress} color={"success"} />
           <br/>
           <Form>
               <FormGroup>
@@ -75,14 +88,8 @@ export default class ContactForm extends Component {
                   <Label for="message">Enter Your Message</Label>
                   <Input type="textarea" name="message" id="message" placeholder="Please Enter Your Message" onChange={this.messageChange} value={this.state.message} />
               </FormGroup>
-              <FormGroup>
-                  <Label for="exampleFile">File</Label>
-                  <Input type="file" name="file" id="exampleFile" />
-                  <FormText color="muted">
-                      Please feel free to upload your resume to inquire about open positions
-                  </FormText>
-              </FormGroup>
-              <Button className={"btn btn-primary"}>Submit</Button>
+              <Button className={"btn btn-success"}>Submit</Button>
+              <Button className={"btn btn-danger"} onClick={this.handleFormReset} style={{marginLeft: "10px"}}>Reset Form</Button>
           </Form>
       </div>
     )
