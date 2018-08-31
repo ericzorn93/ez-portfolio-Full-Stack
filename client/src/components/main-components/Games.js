@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import GameModal from '../GameModal';
+import GameModal from '../sub-components/GameModal';
 import { Card, CardBody, CardTitle} from 'reactstrap';
 
 // Custom CSS
