@@ -6,7 +6,6 @@ export default class Home extends Component {
     return (
       <div className="container">
         <WelcomeJumbotron/>
-        <h1 className="home-header">Welcome to Daniel Kitchen Gaming - <strong>Home</strong></h1>
       </div>
     )
   }

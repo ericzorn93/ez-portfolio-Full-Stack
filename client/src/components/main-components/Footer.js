@@ -9,7 +9,7 @@ export default class Footer extends Component {
             <div>
                 <footer className="footer">
                     <div className="container">
-                        <span className="text-muted">Daniel Kitchen Gaming &copy; By Eric Zorn</span>
+                        <span style={{color: "white"}}>Daniel Kitchen Gaming &copy; By Eric Zorn</span>
                     </div>
                 </footer>
             </div>

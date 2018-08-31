@@ -3,6 +3,10 @@
     --secondary-text-color: green;
 }
 
+body {
+    background: #F8F9FA;
+}
+
 a {
     color: var(--primary-text-color);
 }
