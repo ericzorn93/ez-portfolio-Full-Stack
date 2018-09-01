@@ -21,7 +21,7 @@ export default class GameModal extends Component {
                     {this.props.orderData.orderInfo}
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="danger" onClick={this.toggle}>Exit To Orders</Button>
+                    <Button color="danger" onClick={this.toggle}>Exit To All Games</Button>
                 </ModalFooter>
             </Modal>
         </div>
