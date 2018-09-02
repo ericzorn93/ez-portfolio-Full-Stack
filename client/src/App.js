@@ -9,23 +9,33 @@ import About from './components/main-components/About';
 import Contact from "./components/main-components/Contact";
 import SocialMedia from "./components/main-components/SocialMedia";
 
+// Redux Imports
+import { Provider } from 'react-redux';
+
+
+const store = {
+  games: [],
+  orders: []
+};
 
 class App extends Component {
   
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <NavHead/>
-          <br/>
-          <Route exact component={Home} path="/"/>
-          <Route exact component={Contact} path="/contact" />
-          <Route exact component={Games} path="/games"/>
-          <Route exact component={About} path="/about"/>
-          <Route exact component={SocialMedia} path="/social-media"/>
-          {/*<Footer/>*/}
-        </div>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="App">
+            <NavHead/>
+            <br/>
+            <Route exact component={Home} path="/"/>
+            <Route exact component={Contact} path="/contact" />
+            <Route exact component={Games} path="/games"/>
+            <Route exact component={About} path="/about"/>
+            <Route exact component={SocialMedia} path="/social-media"/>
+            {/*<Footer/>*/}
+          </div>
+        </BrowserRouter>
+      </Provider>
     );
   }
 }

@@ -42,6 +42,9 @@ export default class SocialMedia extends Component {
             </tr>
             </tbody>
         </Table>
+        <div className="text-center">
+            <button type="button" className="btn btn-lg btn-dark"><Link to="/games">View Daniel's Current Work</Link></button>
+        </div>
       </div>
     )
   }

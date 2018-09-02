@@ -13,7 +13,7 @@ export default class GameModal extends Component {
 
   render() {
     return (
-        <div>
+        <React.Fragment>
             <Button color="primary" onClick={this.toggle}>Click for Info</Button>
             <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                 <ModalHeader toggle={this.toggle} key={this.props.orderData.orderID}>{this.props.orderData.orderName}</ModalHeader>
@@ -24,7 +24,7 @@ export default class GameModal extends Component {
                     <Button color="danger" onClick={this.toggle}>Exit To All Games</Button>
                 </ModalFooter>
             </Modal>
-        </div>
+        </React.Fragment>
     )
   }
 }
