@@ -16,3 +16,7 @@ a:hover {
     color: var(--secondary-text-color);
     text-decoration: none;
 }
+
+.active {
+    border-bottom: 2px dashed greenyellow;
+}

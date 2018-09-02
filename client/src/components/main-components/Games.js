@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import GameModal from '../sub-components/GameModal';
-import { Card, CardBody, CardTitle, CardDeck, CardSubtitle, Button, CardImg, CardText } from 'reactstrap';
+import { Card, CardBody, CardTitle } from 'reactstrap';
 
 // Custom CSS
 import '../../css/Games.css';
@@ -27,6 +27,7 @@ export default class Games extends Component {
 
   render() {
     const { orders } = this.state;
+    const placeHolderImgURL = "https://source.unsplash.com/user/erondu/318x180";
 
     return (
       <div className="container card-container">
@@ -38,7 +39,7 @@ export default class Games extends Component {
                         <CardBody>
                             <CardTitle>{order.orderName}</CardTitle>
                         </CardBody>
-                        <img width="100%" src="https://source.unsplash.com/user/erondu/318x180" alt={order.name} />
+                        <img width="100%" src={placeHolderImgURL} alt={order.name} />
                         <CardBody>
                             {/* Order Modal */}
                             <GameModal orderData={{orderID: order.id, orderName: order.orderName, orderInfo: order.orderInformation}} />

@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server.js",
-    "dev": "concurrently \"PORT=3001 yarn start\" \"cd ./client/ && yarn start\""
+    "dev": "concurrently \"PORT=3001 yarn start\" \"cd ./client/ && yarn start\"",
+    "dev-install": "npm install && cd client && npm install"
   },
   "dependencies": {
     "axios": "^0.18.0",

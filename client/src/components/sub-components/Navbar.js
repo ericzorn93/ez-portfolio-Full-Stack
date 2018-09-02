@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import {
     Collapse,
+    Nav,
     Navbar,
     NavbarToggler,
     NavbarBrand,
-    Nav,
     NavItem,
-    NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default class NavHead extends Component {
 
@@ -24,6 +23,7 @@ export default class NavHead extends Component {
             isOpen: false
         };
     }
+
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
@@ -33,20 +33,20 @@ export default class NavHead extends Component {
 
   render() {
     return (
-            <div>
+            <React.Fragment>
                 <Navbar color="dark" dark expand="md">
                     <NavbarBrand><Link to="/" style={{color: "white"}}>Daniel Kitchen Gaming</Link></NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink><Link to="/about">About Me</Link></NavLink>
+                                <div className={"nav-link"}><NavLink to="/about" activeClassName={"active"}>About Me</NavLink></div>
                             </NavItem>
                             <NavItem>
-                                <NavLink><Link to="/social-media">Social Media</Link></NavLink>
+                                <div className={"nav-link"}><NavLink to="/social-media" activeClassName={"active"}>Social Media</NavLink></div>
                             </NavItem>
                             <NavItem>
-                                <NavLink><Link to="/contact">Contact</Link></NavLink>
+                                <div className={"nav-link"}><NavLink to="/contact" activeClassName={"active"}>Contact</NavLink></div>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
@@ -70,7 +70,7 @@ export default class NavHead extends Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
-            </div>
+            </React.Fragment>
     )
   }
 }
