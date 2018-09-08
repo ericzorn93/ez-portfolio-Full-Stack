@@ -24,7 +24,8 @@ const CustomerSchema = new Schema({
     name: String,
     email: String,
     phone: Number,
-    message: String
+    message: String,
+    date: Date
 });
 const CustomerModel = mongoose.model('Customer', CustomerSchema);
 
@@ -45,7 +46,8 @@ app.post('/mail/new', (req, res) => {
         name: req.body.name,
         email: req.body.email,
         phone: req.body.phone,
-        message: req.body.message
+        message: req.body.message,
+        date: new Date()
     });
 
     customer_instance.save(err => {
