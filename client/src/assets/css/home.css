@@ -1,0 +1,95 @@
+/* Navigation Edits */
+/* @import "../css/navigation.css"; */
+
+.sidebar {
+    margin-top: -350px;
+}
+
+.profile-pic {
+    margin-left: -40px;
+}
+
+.sidebar ul li {
+    font-size: 15px;
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -50px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    font-family: var(--primary-font-family);
+    text-align: center;
+}
+
+.home-intro {
+    color: var(--secondary-color);
+    font-family: var(--primary-font-family);
+}
+
+.home-about {
+    color: var(--secondary-color);
+    font-family: var(--primary-font-family);
+}
+
+.hero-text {
+    animation: heroTextAnimation 2s forwards 0s linear;
+}
+
+@keyframes heroTextAnimation {
+    0%{
+        transform: rotate(0) scale(1);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) scale(1);
+        opacity: 1;
+        }
+}
+
+.intro-btn {
+    border: 2px solid var(--secondary-color);
+    background: none;
+    color: var(--secondary-color);
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    transition: all 100ms linear;
+    padding: 15px;
+    font-weight: 700;
+    font-family: var(--primary-font-family);
+}
+
+.intro-btn a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.intro-btn:hover {
+    border: white solid 2px;
+    background: var(--secondary-color);
+}
+
+.intro-btn a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 983px) {
+    .sidebar {
+        margin-top: -330px;
+    }
+}
+
+@media (max-width: 467px) {
+    .sidebar {
+        margin-top: -300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        margin-top: -300px;
+    }
+}

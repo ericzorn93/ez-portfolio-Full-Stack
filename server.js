@@ -1,14 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const router = express.Router();
 const morgan = require('morgan');
-const dbInfo = require('./databaseInformation');
-
+const sgMail = require('@sendgrid/mail');
+require('dotenv').config();
 
 // Server Setup
 const port = process.env.PORT || 3000;
 const app = express();
+
+// Mail Setup
+// const API_KEY = "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";
+sgMail.setApiKey(process.env.MAIL_API_KEY);
 
 // Middleware
 app.use(morgan('dev'));
@@ -16,25 +18,30 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 /************* DATABASE SETUP ****************/
-mongoose.connect(`mongodb://${"ericzorndesigns"}:${"Baseball30!"}@ds219672.mlab.com:19672/daniel-kitchen-gaming`);
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-
-// Models
-const GameModel = dbInfo.models.gameModel;
-const OrderModel = dbInfo.models.orderModel;
-
-db.once('open', () => {
-    console.log("we're connected!");
-});
 
 /************* ROUTING ****************/
-// Imported Routes
-const games = require('./api/games');
-const orders = require('./api/orders');
-app.use('/api/games', games);
-app.use('/api/orders', orders);
+app.post('/mail/new', (req, res) => {
+    console.log("Route Entered");
+    const { phone } = req.body;
+    let newPhoneNumber = `(${phone.slice(0,3)})-${phone.slice(3,6)}-${phone.slice(6)}`;
 
+    sgMail.send({
+        to: 'ericzorndesigns@gmail.com',
+        from: req.body.email,
+        subject: 'EZ Dev Business Inquiry',
+        text: `Phone Number: ${req.body}.\nMessage: ${req.message}`,
+        html: `
+        <strong>Name: </strong> ${req.body.name}<hr/>
+        <strong>Email Address: </strong> ${req.body.email}<hr/>
+        <strong>Phone Number: </strong> ${newPhoneNumber}<hr/>
+        <strong>Message: </strong> ${req.body.message}
+        `,
+      }, function(err, json) {
+        if (err) { return res.json(err) }
+        res.redirect('/');
+    });
+    // res.redirect('/');
+})
 
 
 

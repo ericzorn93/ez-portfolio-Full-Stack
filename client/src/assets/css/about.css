@@ -1,0 +1,69 @@
+body {
+    background: var(--primary-color);
+}
+
+.about-header {
+    color: var(--secondary-color);
+    font-family: var(--primary-font-family);
+    margin-top: 80px;
+    font-size: 40px;
+    animation: headerAnimation 1s forwards 0s linear;
+}
+
+@keyframes headerAnimation{
+    0%{
+        transform: rotate(0) scale(1) translateX(-760px);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) scale(1) translateX(0px);
+        opacity: 1;
+        }
+}
+
+.section-header-text {
+    color: white;
+    font-family: var(--primary-font-family);
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.info-card {
+    margin-top: 30px;
+    border: 1px solid var(--secondary-color);
+    width: 95%;
+    padding: 15px;
+}
+
+.education-section .schools .about-label {
+    color: white;
+    font-weight: 800;
+    line-height: 20px;
+    width: 80%;
+}
+
+.education-section .schools .about-info {
+    color: white;
+    font-size: 12px;
+}
+
+.progress-bars {
+    margin-top: 40px;
+}
+
+.progressbar-label {
+    color: white;
+    font-weight: 800;
+}
+
+.experience-section {
+    margin-top: 40px;
+}
+
+.experience-section .experiences {
+     color: white;
+ }
+
+.experience-section .experiences .experience-title {
+    font-weight: 800;
+}

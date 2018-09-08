@@ -1,22 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+/* Global Variables */
 :root {
-    --primary-text-color: yellowgreen;
-    --secondary-text-color: green;
-    --primary-dark: #353A3F;
-}
-
-body {
-    background: #F8F9FA;
-}
-
-a {
-    color: var(--primary-text-color);
-}
-
-a:hover {
-    color: var(--secondary-text-color);
-    text-decoration: none;
-}
-
-.active {
-    border-bottom: 2px dashed greenyellow;
+  --primary-color: #1f1f1f;
+  --secondary-color: #FAD96B;
+  --primary-font-family: 'Press Start 2P', cursive;
 }

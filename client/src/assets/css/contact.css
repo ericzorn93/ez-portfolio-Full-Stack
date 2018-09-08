@@ -1,0 +1,33 @@
+.contact-header {
+    color: var(--secondary-color);
+    font-family: var(--primary-font-family);
+    margin-top: 80px;
+    font-size: 40px;
+    animation: headerAnimation 1s forwards 0s linear;
+}
+
+@keyframes headerAnimation{
+    0%{
+        transform: rotate(0) scale(1) translateX(-760px);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0) scale(1) translateX(0px);
+        opacity: 1;
+    }
+}
+
+.form-label {
+    color: white;
+}
+
+.form-wrap {
+    border: 1px solid var(--secondary-color);
+    padding: 25px;
+    width: 100%;
+}
+
+.form-submitted {
+    color: var(--secondary-color);
+    text-decoration: none;
+}

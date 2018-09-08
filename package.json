@@ -1,5 +1,5 @@
 {
-  "name": "daniel-kitchen-gaming",
+  "name": "ez-portfolio",
   "version": "1.0.0",
   "main": "server.js",
   "author": "Eric Zorn",
@@ -10,9 +10,11 @@
     "dev-install": "npm install && cd client && npm install"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.3",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "mongoose": "^5.2.7",
     "mongoose-unique-validator": "^2.0.1",
