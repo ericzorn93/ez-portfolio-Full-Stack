@@ -3,14 +3,30 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
+const mongoose = require('mongoose');
 
 // Server Setup
 const port = process.env.PORT || 3000;
 const app = express();
 
 // Mail Setup
-// const API_KEY = "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";
 sgMail.setApiKey(process.env.MAIL_API_KEY);
+
+// Database Setup
+const mongoDB = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds245772.mlab.com:45772/ericzornportfolio`;
+mongoose.connect(mongoDB);
+mongoose.Promise = global.Promise;
+const db = mongoose.connection;
+//Bind connection to error event (to get notification of connection errors)
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+const Schema = mongoose.Schema;
+const CustomerSchema = new Schema({
+    name: String,
+    email: String,
+    phone: Number,
+    message: String
+});
+const CustomerModel = mongoose.model('Customer', CustomerSchema);
 
 // Middleware
 app.use(morgan('dev'));
@@ -24,6 +40,17 @@ app.post('/mail/new', (req, res) => {
     console.log("Route Entered");
     const { phone } = req.body;
     let newPhoneNumber = `(${phone.slice(0,3)})-${phone.slice(3,6)}-${phone.slice(6)}`;
+
+    const customer_instance = new CustomerModel({ 
+        name: req.body.name,
+        email: req.body.email,
+        phone: req.body.phone,
+        message: req.body.message
+    });
+
+    customer_instance.save(err => {
+        if (err) return handleError(err);
+    });
 
     sgMail.send({
         to: 'ericzorndesigns@gmail.com',
