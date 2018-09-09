@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
-    "dev": "concurrently \"PORT=3001 nodemon server.js\" \"cd ./client/ && yarn start\"",
+    "dev": "concurrently \"PORT=3001 nodemon index.js\" \"cd ./client/ && yarn start\"",
     "dev-install": "npm install && cd client && npm install",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   },
