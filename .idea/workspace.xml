@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25d5c0d1-8563-4f79-8454-05f3f991a8f0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/main-components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/main-components/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -87,14 +84,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="6" />
+          <entry key="js" value="83" />
           <entry key="json" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="6" />
+          <entry key="JavaScript" value="83" />
         </counts>
       </usages-collector>
     </session>
@@ -114,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="444">
+              <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -132,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="405">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -214,9 +211,9 @@
         <option value="$PROJECT_DIR$/client/src/components/main-components/Games.js" />
         <option value="$PROJECT_DIR$/client/src/components/sub-components/Navbar.js" />
         <option value="$PROJECT_DIR$/client/src/App.css" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/client/package.json" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -335,12 +332,12 @@
       <workItem from="1535741697286" duration="5474000" />
       <workItem from="1535912532123" duration="2252000" />
       <workItem from="1536464038210" duration="15000" />
-      <workItem from="1536464075771" duration="694000" />
+      <workItem from="1536464075771" duration="980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40014000" />
+    <option name="totallyTimeSpent" value="40300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="0" />
@@ -490,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -517,8 +507,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="405">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
         </state>
       </provider>
     </entry>

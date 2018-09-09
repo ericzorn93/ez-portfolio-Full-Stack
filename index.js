@@ -80,6 +80,13 @@ app.post('/mail/new', (req, res) => {
 });
 
 
+app.get('/api/test', (req, res) => {
+    res.json({
+        testWorks: true
+    });
+});
+
+
 
 // Server Listen
 app.listen(port, () => console.log(`Server listening on port: ${port}`));
