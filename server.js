@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
 const mongoose = require('mongoose');
+const path = require('path');
 
 // Server Setup
 const port = process.env.PORT || 3000;
@@ -32,6 +33,12 @@ const CustomerModel = mongoose.model('Customer', CustomerSchema);
 // Middleware
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: true}));
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  });
 
 
 /************* DATABASE SETUP ****************/

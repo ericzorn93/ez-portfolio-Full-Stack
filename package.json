@@ -5,7 +5,7 @@
   "author": "Eric Zorn",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "concurrently \"PORT=3001 yarn start\" \"cd ./client/ && yarn start\"",
     "dev-install": "npm install && cd client && npm install"
   },
