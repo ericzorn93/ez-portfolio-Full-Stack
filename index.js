@@ -11,7 +11,8 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 // Mail Setup
-sgMail.setApiKey(process.env.MAIL_API_KEY);
+sgMail.setApiKey("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");
+// sgMail.setApiKey(process.env.MAIL_API_KEY);
 
 /************* DATABASE SETUP ****************/
 const mongoDB = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds245772.mlab.com:45772/ericzornportfolio`;
@@ -43,7 +44,7 @@ app.get('*', (req, res) => {
 
 /************* ROUTING ****************/
 app.post('/mail/new', (req, res) => {
-    console.log("Route Entered");
+    console.log("Email Mail Sent and Data Stored in DB");
     const { phone } = req.body;
     let newPhoneNumber = `(${phone.slice(0,3)})-${phone.slice(3,6)}-${phone.slice(6)}`;
 
@@ -75,7 +76,6 @@ app.post('/mail/new', (req, res) => {
         if (err) { return res.json(err) }
         res.redirect('/');
     });
-    // res.redirect('/');
 });
 
 
