@@ -1,0 +1,9 @@
+.user-container {
+    margin-top: 40px;
+}
+
+.user {
+    border: 3px solid var(--secondary-color);
+    color: white;
+    margin-top: 40px;
+}
