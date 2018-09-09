@@ -1,5 +1,5 @@
 const keys = {
-    googleMapKey: "AIzaSyBcFWYlKe66cpgbBaJ46G_IVTVf8NJk5TI"
+    googleMapKey: "AIzaSyDVeilTU07walTiggI-pXhNNMyEDGWJP8g"
 };
 
 export default keys;
