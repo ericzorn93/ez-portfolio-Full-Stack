@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "concurrently \"PORT=3001 yarn start\" \"cd ./client/ && yarn start\"",
-    "dev-install": "npm install && cd client && npm install"
+    "dev-install": "npm install && cd client && npm install",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
