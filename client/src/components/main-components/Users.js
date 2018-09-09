@@ -24,7 +24,7 @@ class Users extends Component {
         console.log(this.state);
         return (
             <React.Fragment>
-                <Navigation/>
+                <Navigation profileImgMarginLeft={5}/>
                 <div className="container">
                     <h1 className={"user-title"}>All Users</h1>
                     <User users={this.state.users}/>

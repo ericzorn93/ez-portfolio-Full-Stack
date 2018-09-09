@@ -27,9 +27,9 @@ class Navigation extends Component {
             <button className="toggle-menu-btn" onClick={this.toggleSidebar}>
                 &#9776;
             </button>
-            <h1 className={'nav-title'}>Eric Zorn<i className="fas fa-code"></i></h1>
+            <Link to={'/'}><h1 className={'nav-title'}>Eric Zorn<i className="fas fa-code"></i></h1></Link>
             <ul>
-                <img src={ProfilePicture} alt="profile-pic" className="profile-pic" style={{marginLeft: profileImgMarginLeft}}/>
+                <a href="https://github.com/ericzorn93" target={"_blank"}><img src={ProfilePicture} alt="profile-pic" className="profile-pic" style={{marginLeft: profileImgMarginLeft}}/></a>
                 <li><Link to={'/'} onClick={this.handleLinkToggle}>Home</Link></li>
                 <li><Link to={'/about'} onClick={this.handleLinkToggle}>About</Link></li>
                 <li><Link to={'/contact'} onClick={this.handleLinkToggle}>Contact Me</Link></li>
