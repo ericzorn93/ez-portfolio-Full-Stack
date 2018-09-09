@@ -66,7 +66,7 @@ class Contact extends Component {
                   <Col xs={12} md={12}>
                       <h1 style={{display: this.state.formConfirm}} className={"text-center form-submitted"}>Email Submitted, speak to you soon :)</h1>
 
-                      <form className={"form-wrap"} onSubmit={this.handleFormSubmit} style={{display: this.state.formView}} method="POST" action="/mail/new">
+                      <form className={"form-wrap"} onSubmit={this.handleFormSubmit} style={{display: this.state.formView}} method="POST" action="/mail/send">
                           <FormGroup controlId="formBasicText">
                               <ControlLabel className={"form-label"}>Please Enter Your Name:</ControlLabel>
                               <FormControl type={"text"} value={this.state.name} placeholder={"Enter Name"} onChange={this.handleFormChange} name={"name"}/>
