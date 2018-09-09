@@ -4,6 +4,7 @@ const router = express.Router();
 const app = express();
 const mongoose = require('mongoose');
 const sgMail = require('@sendgrid/mail');
+const dbInfo = require('../db/dbInfo');
 
 
 // Mail Setup
@@ -15,7 +16,7 @@ app.use(express.urlencoded()); // to support URL-encoded bodies
 
 
 /************* DATABASE SETUP ****************/
-const mongoDB = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds245772.mlab.com:45772/ericzornportfolio`;
+const mongoDB = dbInfo.dbURL;
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
