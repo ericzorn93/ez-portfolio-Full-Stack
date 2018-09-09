@@ -21,14 +21,15 @@ class Navigation extends Component {
 
   render() {
     const { sidebarOpen } = this.state;
+    const { sidebarMarginTop, profileImgMarginLeft} = this.props;
     return (
-        <nav className={sidebarOpen ? "sidebar active" : "sidebar"} style={{marginTop: this.props.sidebarMarginTop, zIndex: 999}}>
+        <nav className={sidebarOpen ? "sidebar active" : "sidebar"} style={{marginTop: sidebarMarginTop ? sidebarMarginTop : 0, zIndex: 999}}>
             <button className="toggle-menu-btn" onClick={this.toggleSidebar}>
                 &#9776;
             </button>
             <h1 className={'nav-title'}>Eric Zorn<i className="fas fa-code"></i></h1>
             <ul>
-                <img src={ProfilePicture} alt="profile-pic" className="profile-pic" style={{marginLeft: this.props.profileImgMarginLeft}}/>
+                <img src={ProfilePicture} alt="profile-pic" className="profile-pic" style={{marginLeft: profileImgMarginLeft}}/>
                 <li><Link to={'/'} onClick={this.handleLinkToggle}>Home</Link></li>
                 <li><Link to={'/about'} onClick={this.handleLinkToggle}>About</Link></li>
                 <li><Link to={'/contact'} onClick={this.handleLinkToggle}>Contact Me</Link></li>
