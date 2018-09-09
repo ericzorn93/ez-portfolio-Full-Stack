@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25d5c0d1-8563-4f79-8454-05f3f991a8f0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
     </list>
@@ -75,7 +76,7 @@
         <counts>
           <entry key="css" value="5" />
           <entry key="env" value="2" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="js" value="21" />
           <entry key="json" value="4" />
         </counts>
@@ -85,13 +86,13 @@
           <entry key="CSS" value="5" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="21" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="277" />
-          <entry key="gitignore" value="45" />
+          <entry key="gitignore" value="81" />
           <entry key="js" value="5237" />
           <entry key="json" value="14" />
         </counts>
@@ -102,7 +103,7 @@
           <entry key="HTML" value="2" />
           <entry key="JSON" value="14" />
           <entry key="JavaScript" value="5235" />
-          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="PLAIN_TEXT" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -132,10 +133,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/.gitignore">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -165,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/app/navbar/navbar.component.css" />
         <option value="$PROJECT_DIR$/client/proxy.conf.json" />
         <option value="$PROJECT_DIR$/client/src/app/orders/orders.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/orders/orders.component.ts" />
@@ -216,6 +216,7 @@
         <option value="$PROJECT_DIR$/client/src/assets/important-info/keys.js" />
         <option value="$PROJECT_DIR$/client/src/components/sub-components/Map.js" />
         <option value="$PROJECT_DIR$/client/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -260,6 +261,19 @@
               <item name="ez-portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="ez-portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ez-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ez-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ez-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ez-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -335,12 +349,12 @@
       <workItem from="1535912532123" duration="2252000" />
       <workItem from="1536464038210" duration="15000" />
       <workItem from="1536464075771" duration="5633000" />
-      <workItem from="1536508221669" duration="13787000" />
+      <workItem from="1536508221669" duration="13878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58740000" />
+    <option name="totallyTimeSpent" value="58831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="979" extended-state="6" />
@@ -395,7 +409,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/Footer.css" />
     <entry file="file://$PROJECT_DIR$/client/src/components/Games.js" />
     <entry file="file://$PROJECT_DIR$/client/src/components/OrderModal.js" />
     <entry file="file://$PROJECT_DIR$/client/src/Games.css" />
@@ -608,13 +621,6 @@
     <entry file="file://$PROJECT_DIR$/client/src/assets/important.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/assets/important-info/keys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/sub-components/Map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -627,8 +633,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="300">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/assets/important-info/keys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
