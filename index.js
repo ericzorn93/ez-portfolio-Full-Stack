@@ -11,10 +11,10 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 // Mail Setup
-sgMail.setApiKey("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");
+sgMail.setApiKey(process.env.MAIL_API_KEY);
 
 /************* DATABASE SETUP ****************/
-const mongoDB = `mongodb://${"ericzorndesigns"}:${"Baseball30!"}@ds245772.mlab.com:45772/ericzornportfolio`;
+const mongoDB = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds245772.mlab.com:45772/ericzornportfolio`;
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
