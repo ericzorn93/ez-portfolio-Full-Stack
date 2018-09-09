@@ -68,7 +68,8 @@ app.post('/mail/new', (req, res) => {
         <strong>Name: </strong> ${req.body.name}<hr/>
         <strong>Email Address: </strong> ${req.body.email}<hr/>
         <strong>Phone Number: </strong> ${newPhoneNumber}<hr/>
-        <strong>Message: </strong> ${req.body.message}
+        <strong>Message: </strong> ${req.body.message}<hr/>
+        <strong>Date: </strong> ${new Date()}
         `,
       }, function(err, json) {
         if (err) { return res.json(err) }
