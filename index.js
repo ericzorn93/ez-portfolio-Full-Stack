@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 
 // Server Setup
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const app = express();
 
 // Mail Setup
@@ -49,7 +49,7 @@ app.post('/mail/new', (req, res) => {
     const { phone } = req.body;
     let newPhoneNumber = `(${phone.slice(0,3)})-${phone.slice(3,6)}-${phone.slice(6)}`;
 
-    const customer_instance = new CustomerModel({ 
+    const customer_instance = new CustomerModel({
         name: req.body.name,
         email: req.body.email,
         phone: req.body.phone,
@@ -77,7 +77,7 @@ app.post('/mail/new', (req, res) => {
         res.redirect('/');
     });
     // res.redirect('/');
-})
+});
 
 
 
