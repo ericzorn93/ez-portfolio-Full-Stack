@@ -34,15 +34,6 @@ const Customer = mongoose.model('Customer', CustomerSchema);
 
 
 
-/********** GET ROUTES ***************/
-router.get('/api/all-users', (req, res) => {
-    Customer.find(function (err, customers) {
-        if (err) return console.error(err);
-        console.log(customers);
-        res.end();
-    })
-});
-
 
 
 /********** POST ROUTES ***************/
@@ -80,5 +71,21 @@ router.post('/send', (req, res) => {
         res.redirect('/');
     });
 });
+
+
+// Get All Users
+router.post('/api/all-users', (req, res) => {
+    Customer.find({}).exec(function(err, models) {
+        if (err) {
+            res.render('error', {
+                status: 500
+            });
+        } else {
+            res.json(models);
+            // console.log(models);
+        }
+    });
+});
+
 
 module.exports = router;
