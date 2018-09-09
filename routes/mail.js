@@ -82,7 +82,6 @@ router.post('/api/all-users', (req, res) => {
             });
         } else {
             res.json(models);
-            // console.log(models);
         }
     });
 });
