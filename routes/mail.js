@@ -30,7 +30,19 @@ const CustomerSchema = new Schema({
     message: String,
     date: Date
 });
-const CustomerModel = mongoose.model('Customer', CustomerSchema);
+const Customer = mongoose.model('Customer', CustomerSchema);
+
+
+
+/********** GET ROUTES ***************/
+router.get('/api/all-users', (req, res) => {
+    Customer.find(function (err, customers) {
+        if (err) return console.error(err);
+        console.log(customers);
+        res.end();
+    })
+});
+
 
 
 /********** POST ROUTES ***************/
@@ -39,7 +51,7 @@ router.post('/send', (req, res) => {
     const { phone } = req.body;
     let newPhoneNumber = `(${phone.slice(0,3)})-${phone.slice(3,6)}-${phone.slice(6)}`;
 
-    const customer_instance = new CustomerModel({
+    const customer_instance = new Customer({
         name: req.body.name,
         email: req.body.email,
         phone: req.body.phone,
