@@ -13,8 +13,8 @@ const app = express();
 // Mail Setup
 sgMail.setApiKey(process.env.MAIL_API_KEY);
 
-// Database Setup
-const mongoDB = `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds245772.mlab.com:45772/ericzornportfolio`;
+/************* DATABASE SETUP ****************/
+const mongoDB = `mongodb://${"ericzorndesigns"}:${"Baseball30!"}@ds245772.mlab.com:45772/ericzornportfolio`;
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
@@ -40,8 +40,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/client/build/index.html'));
   });
 
-
-/************* DATABASE SETUP ****************/
 
 /************* ROUTING ****************/
 app.post('/mail/new', (req, res) => {
