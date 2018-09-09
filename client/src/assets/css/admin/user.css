@@ -7,3 +7,12 @@
     color: white;
     margin-top: 40px;
 }
+
+.user .user-link {
+    color: white;
+    text-decoration: none;
+}
+
+.user .user-link:hover {
+    color: var(--secondary-color);
+}

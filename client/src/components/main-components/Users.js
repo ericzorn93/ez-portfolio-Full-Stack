@@ -8,8 +8,8 @@ class Users extends Component {
 
     state = {
         users: [
-            { id: 1, name: "Eric Zorn", email: "test", phone: "2016252453", message: "This is a test Message", date: "2018-09-09T16:21:51.231Z" },
-            { id: 2, name: "Keith Zorn", email: "second", phone: "2222222222", message: "This is a another Message", date: "2017-09-09T16:21:51.231Z" }
+            { id: 1, name: "Eric Zorn", email: "test@test.com", phone: "2016252453", message: "This is a test Message", date: "2018-09-09T16:21:51.231Z" },
+            { id: 2, name: "Keith Zorn", email: "second@email.com", phone: "2222222222", message: "This is a another Message", date: "2017-09-09T16:21:51.231Z" }
         ]
     };
 
