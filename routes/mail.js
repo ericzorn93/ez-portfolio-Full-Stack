@@ -55,7 +55,7 @@ router.post('/send', (req, res) => {
     });
 
     sgMail.send({
-        to: 'ericzorndesigns@gmail.com',
+        to: 'zornwebdev@gmail.com',
         from: req.body.email,
         subject: 'EZ Dev Business Inquiry',
         text: `Phone Number: ${req.body}.\nMessage: ${req.message}`,

@@ -35,7 +35,7 @@ class Navigation extends Component {
                 <li><Link to={'/contact'} onClick={this.handleLinkToggle}>Contact Me</Link></li>
             </ul>
             <div className="social-icons">
-                <SocialIcon url={"mailto:ericzorndesigns@gmail.com?subject=EZ%20Business%20Inquiry&body=Hey%20Eric,%20my%20name%20is%20,"} network={"email"} style={{width: 30, marginLeft: 5}}/>
+                <SocialIcon url={"mailto:zornwebdev@gmail.com?subject=EZ%20Business%20Inquiry&body=Hey%20Eric,%20my%20name%20is%20,"} network={"email"} style={{width: 30, marginLeft: 5}}/>
                 <SocialIcon url={"https://www.linkedin.com/in/ericzorn/"} style={{width: 30, marginLeft: 5}}/>
                 <SocialIcon url={"https://github.com/ericzorn93"} style={{width: 30, marginLeft: 5}}/>
                 <SocialIcon url={"https://www.facebook.com/ezorn"} style={{width: 30, marginLeft: 5}}/>
