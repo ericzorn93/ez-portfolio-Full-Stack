@@ -90,7 +90,9 @@ class Contact extends Component {
                   </Col>
               </Row>
           </div>
-          <MyMapComponent/>
+          <div id="contact-map">
+            <MyMapComponent/>
+          </div>
       </React.Fragment>
     )
   }

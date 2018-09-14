@@ -6,7 +6,7 @@ const AboutMe = (props) => {
   return (
     <div className={"about-me-container container"}>
         <div className="row text-center">
-            <img className={"profile-img"} src={ProfilePicture} alt="Profile Picture"/>
+            <img className={"profile-img"} src={ProfilePicture} alt="Profile"/>
         </div>
         <h4 className={"about-me-text"}><a style={{color: "white"}} href="https://github.com/ericzorn93" target={"_blank"}><strong>My Github: https://github.com/ericzorn93</strong></a></h4>
         <br/>

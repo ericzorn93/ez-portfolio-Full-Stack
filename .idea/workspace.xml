@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25d5c0d1-8563-4f79-8454-05f3f991a8f0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sub-components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sub-components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/mail.js" afterDir="false" />
-    </list>
+    <list default="true" id="25d5c0d1-8563-4f79-8454-05f3f991a8f0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -66,7 +62,7 @@
     <session id="-2036514312">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.6" value="1" />
@@ -377,16 +373,15 @@
       <workItem from="1536464075771" duration="5633000" />
       <workItem from="1536508221669" duration="14673000" />
       <workItem from="1536614758428" duration="13000" />
-      <workItem from="1536709315501" duration="491000" />
+      <workItem from="1536709315501" duration="680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60130000" />
+    <option name="totallyTimeSpent" value="60319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="982" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17249699" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -401,7 +396,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49964002" visible="true" weight="0.22247706" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49964002" visible="true" weight="0.40940368" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50035995" side_tool="true" weight="0.26895565" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3287858" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />

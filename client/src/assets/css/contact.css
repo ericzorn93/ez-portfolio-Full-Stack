@@ -31,3 +31,12 @@
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+
+@media(max-width: 480px) {
+    #contact-map {
+        display: block;
+        position: relative;
+        margin-top: 50px;
+    }
+}
