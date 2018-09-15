@@ -23,7 +23,7 @@ class Navigation extends Component {
     const { sidebarOpen } = this.state;
     const { sidebarMarginTop, profileImgMarginLeft} = this.props;
     return (
-        <nav className={sidebarOpen ? "sidebar active" : "sidebar"} style={{marginTop: sidebarMarginTop ? sidebarMarginTop : 0, zIndex: 999}}>
+        <nav className={sidebarOpen ? "sidebar active" : "sidebar"} style={{marginTop: sidebarMarginTop ? sidebarMarginTop : "", zIndex: 999}}>
             <button className="toggle-menu-btn" onClick={this.toggleSidebar}>
                 &#9776;
             </button>

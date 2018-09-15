@@ -2,7 +2,7 @@
 /* @import "../css/navigation.css"; */
 
 .sidebar {
-    margin-top: -350px;
+    margin-top: -300px;
 }
 
 .profile-pic {
@@ -51,16 +51,22 @@
     color: var(--secondary-color);
     border-radius: 20px;
     font-size: 15px;
-    margin-top: 20px;
-    /* transition: all 100ms linear; */
+    margin-top: 50px;
+    transition: all 100ms linear;
     padding: 15px;
     font-weight: 700;
     font-family: var(--primary-font-family);
+    display: block;
+    width: 400px;
+    height: 50px;
+    color: var(--secondary-color);
 }
 
-.intro-btn a {
-    color: var(--secondary-color);
+.intro-btn:hover {
+    color: var(--primary-color);
     text-decoration: none;
+    margin-top: 50px;
+    background: var(--secondary-color)
 }
 
 
@@ -78,20 +84,36 @@
 
 /* Media Queries */
 
-@media (max-width: 983px) {
+@media (min-width: 1080px) {
     .sidebar {
-        margin-top: -330px;
+        margin-top: -310px;
+    }
+
+    .intro-btn{
+        width: 250px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .sidebar {
+        margin-top: -250px;
+    }
+
+    .intro-btn{
+        width: 250px;
+        font-size: 10px;
     }
 }
 
 @media (max-width: 467px) {
     .sidebar {
-        margin-top: -300px;
+        /* margin-top: -300px; */
     }
 }
 
 @media (max-width: 400px) {
     .sidebar {
-        margin-top: -300px;
+        /* margin-top: -300px; */
     }
 }
