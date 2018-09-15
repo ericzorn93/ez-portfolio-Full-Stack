@@ -97,7 +97,7 @@
 
 @media (max-width: 550px) {
     .sidebar {
-        margin-top: -250px;
+        margin-top: -200px;
     }
 
     .intro-btn{
@@ -108,7 +108,7 @@
 
 @media (max-width: 467px) {
     .sidebar {
-        /* margin-top: -300px; */
+        margin-top: -240px;
     }
 }
 
