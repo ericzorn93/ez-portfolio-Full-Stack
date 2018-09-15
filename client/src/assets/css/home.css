@@ -86,7 +86,7 @@
 
 @media (min-width: 1080px) {
     .sidebar {
-        margin-top: -310px;
+        margin-top: -300px;
     }
 
     .intro-btn{
@@ -112,8 +112,8 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
     .sidebar {
-        /* margin-top: -300px; */
+        margin-top: -190px;
     }
 }
