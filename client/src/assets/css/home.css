@@ -52,7 +52,7 @@
     border-radius: 20px;
     font-size: 15px;
     margin-top: 20px;
-    transition: all 100ms linear;
+    /* transition: all 100ms linear; */
     padding: 15px;
     font-weight: 700;
     font-family: var(--primary-font-family);
@@ -63,15 +63,17 @@
     text-decoration: none;
 }
 
-.intro-btn:hover {
+
+/**** Hover Button Home Page ***/
+/* .intro-btn:hover {
     border: white solid 2px;
     background: var(--secondary-color);
-}
+} */
 
-.intro-btn a:hover {
+/* .intro-btn a:hover {
     color: var(--primary-color);
     text-decoration: none;
-}
+} */
 
 
 /* Media Queries */
